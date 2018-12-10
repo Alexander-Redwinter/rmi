@@ -7,7 +7,7 @@ import java.rmi.server.UnicastRemoteObject;
 public class RemoteCountWordsService implements RemoteCountWords {
 
     public int countWords(String s) throws RemoteException{ //service method to be called. very useful
-        if(s.equals("sudo kill")){
+        if(s.equals("kill")){
             System.out.println("shutting down...");
             System.exit(1);
         }
